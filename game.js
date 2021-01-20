@@ -4,8 +4,8 @@ var userClickedPattern = [];
 var level = 0;
 var started = false;
 
+//check if user press any key
 $(document).keypress(function () { 
-    //console.log(evt.key);
     if (!started) {
         $("#level-title").text("Level "+level);
         nextSequence();
@@ -13,6 +13,7 @@ $(document).keypress(function () {
     }
 });
 
+//check if user clicked
 $(".btn").click(function() {
     var userChosenColour = $(this).attr("id");
     userClickedPattern.push(userChosenColour);
