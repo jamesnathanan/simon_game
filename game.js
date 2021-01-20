@@ -23,7 +23,7 @@ $(".btn").click(function() {
 function nextSequence() {
     level++;
     $("#level-title").text("Level "+level);
-    var randomNumber = Math.floor(Math.random() * 3) + 1;
+    var randomNumber = Math.floor(Math.random() * 4);
     var randomChosenColour = buttonColours[randomNumber];
     gamePattern.push(randomChosenColour);
     playSound(randomChosenColour);
