@@ -70,6 +70,7 @@ function checkAnswer(currentLevel) {
     }
 }
 
+// reset all value
 function startOver() {
     level = 0;
     gamePattern = [];
